@@ -16,8 +16,8 @@ const images = [
 
   const listGalleryRef = document.querySelector('.gallery');
 
-images.forEach(function (image) {
-  listGalleryRef.insertAdjacentHTML('afterbegin', `<li><img src="${image.url}" alt="${image.alt}" width='700px' heigth='700px'></li>`);  
+images.map(function (image) {
+  listGalleryRef.insertAdjacentHTML('afterbegin', `<li><img class="img" src="${image.url}" alt="${image.alt}"></li>`);  
 });
 
 

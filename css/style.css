@@ -1,5 +1,10 @@
 .gallery {
-    display: flexbox;
+    display: inline-flex;
+  }
+
+  .img {
+    width: 500px;
+    height: 300px;
   }
   
   #validation-input {
