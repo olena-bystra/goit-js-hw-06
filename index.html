@@ -10,6 +10,7 @@
 <body>
 
 <!-----task 1-->
+<div class="indent">
  <ul id="categories">
     <li class="item">
       <h2>Animals</h2>
@@ -38,44 +39,57 @@
         <li>Node.js</li>
       </ul>
     </li>
-  </ul>   
+  </ul> 
+</div>  
 
   <!-----task 2-->
+<div class="indent">
   <ul id="ingredients"></ul>
+</div>
 
   <!-----task 3-->
+<div class="indent">
   <ul class="gallery"></ul>
+</div>
 
   <!-----task 4-->
-  <div id="counter">
+  <div id="counter" class="indent">
     <button type="button" data-action="decrement">-1</button>
     <span id="value">0</span>
     <button type="button" data-action="increment">+1</button>
   </div>
 
   <!----task 5-->
+<div class="indent">
   <input type="text" id="name-input" placeholder="Please enter your name" />
   <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
-
+</div>
 
   <!-----task 6-->
+<div class="indent">
   <input
   type="text"
   id="validation-input"
   data-length="6"
   placeholder="Please enter 6 symbols"
 />
+</div>  
+ 
 
 
 <!-----task 7-->
-<input id="font-size-control" type="range" min="16" max="96" />
-<br />
-<span id="text">Abracadabra!</span>
+<div class="indent">
+  <input id="font-size-control" type="range" min="16" max="96" />
+  <br />
+  <span id="text">Abracadabra!</span>
+</div>
+
 
 
 
 <!------task 8-->
-<form class="login-form">
+<div class="indent">
+  <form class="login-form">
   <label>
     Email
     <input type="email" name="email" />
@@ -86,6 +100,17 @@
   </label>
   <button type="submit">Login</button>
 </form>
+</div>
+
+
+
+
+<!--------task 9-->
+<div class="widget">
+  <p>Background color: <span class="color">-</span></p>
+  <button type="button" class="change-color">Change color</button>
+</div>
+
 
 
 
@@ -95,7 +120,7 @@
   <script src="./js/task-4.js" type="module"></script>
   <script src="./js/task-5.js" type="module"></script>
   <script src="./js/task-6.js" type="module"></script>
-  <script src="./js/task-7.js" type="module"></script>
+  <script src="./js/task-7.js" type="module"></script> -->
   <script src="./js/task-8.js" type="module"></script>
   <script src="./js/task-9.js" type="module"></script>
 </body>

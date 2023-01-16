@@ -8,10 +8,21 @@ const ingredients = [
   ];
 
   const refListProducts = document.querySelector('#ingredients');
-  console.log(refListProducts);
 
-  const resultListProducts = ingredients.forEach((product) =>{
+  
+
+  const resultListProducts = ingredients.map((product) =>{
     const refProduct = document.createElement('li');
     refProduct.textContent = product;
-    refListProducts.append(refProduct);
-  });
+    console.log(refProduct);
+    return refProduct;
+    });
+
+    
+
+    refListProducts.append(...resultListProducts);
+
+    
+
+
+
